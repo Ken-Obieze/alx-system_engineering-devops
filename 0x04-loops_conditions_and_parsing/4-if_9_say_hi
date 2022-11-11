@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# displays "Best School" 8 times "Hi" and "Best School"
+
+count=0
+while (($count <= 9))
+do
+	if (($count == 8))
+	then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	let count+=1
+done

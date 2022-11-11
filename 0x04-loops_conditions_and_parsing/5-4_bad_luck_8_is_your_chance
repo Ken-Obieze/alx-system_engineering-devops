@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# displays "Best School" 10 times replacing the 4th and 8th elements
+
+count=0
+while (($count <= 9))
+do
+	if (($count == 3))
+	then
+		echo "bad luck"
+	elif (($count == 7))
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	let count+=1
+done
