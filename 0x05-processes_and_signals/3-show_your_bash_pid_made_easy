@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# display all proces with the word "bash"
+
+pgrep -l "bash"
