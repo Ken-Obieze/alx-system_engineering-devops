@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Program prints from 0 hours to 12 hrs 59 mins
 
 hrs=0
 while [ $hrs -lt 13 ]
@@ -8,7 +9,7 @@ do
 	while [ $mins -lt 60 ]
 	do
 		echo $mins
-		let mins+=1
+		((mins+=1))
 	done
-	let hrs+=1
+	((hrs+=1))
 done
