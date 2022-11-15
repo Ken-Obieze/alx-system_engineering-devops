@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # displays numbers 1 to 20 with texts at specific positions
 
-Count=1
-while (($count < 21))
+count=1
+while [ $count -lt 21 ]
 do
 	case $count in
 		4)
@@ -21,5 +21,5 @@ do
 			echo $count
 			;;
 	esac
-	((count+=1))
+((count+=1))
 done
