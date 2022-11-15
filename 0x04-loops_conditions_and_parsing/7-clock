@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 hrs=0
-for (( c=1; c<=12; c++))
+for (( c=1; c<13; c++))
 do
 	echo Hour: $hrs
 	mins=1
