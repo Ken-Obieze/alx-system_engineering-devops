@@ -2,16 +2,16 @@
 # displays "Best School" 10 times replacing the 4th and 8th elements
 
 count=0
-while (($count <= 9))
+while [ $count -lt 10 ]
 do
-	if (($count == 3))
+	if [ $count == 3 ]
 	then
 		echo "bad luck"
-	elif (($count == 7))
+	elif [ $count == 7 ]
 	then
 		echo "good luck"
 	else
 		echo "Best School"
 	fi
-	let count+=1
+	((count+=1))
 done
