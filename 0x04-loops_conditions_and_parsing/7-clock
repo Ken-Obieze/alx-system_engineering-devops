@@ -4,11 +4,11 @@ hrs=0
 for (( c=1; c<=12; c++))
 do
 	echo Hour: $hrs
-	min=1
-	for ((d=1; d<=60; d++))
+	mins=1
+	for ((d=1; d<60; d++))
 	do
 		echo $mins
-	let mins+=1
+		let mins+=1
 	done
 	let hrs+=1
 done
