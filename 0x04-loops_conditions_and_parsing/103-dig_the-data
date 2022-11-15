@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays sorted IP and http status code of apache log file
+
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr

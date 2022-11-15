@@ -2,9 +2,9 @@
 # displays "Best School" 8 times "Hi" and "Best School"
 
 count=0
-while (($count <= 9))
+while (($count <= 10))
 do
-	if (($count == 8))
+	if (($count == 9))
 	then
 		echo "Hi"
 	else
