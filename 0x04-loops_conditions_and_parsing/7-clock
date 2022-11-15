@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 hrs=0
-for (( c=0; c<13; c++))
+while [ $hrs -lt 13 ]
 do
 	echo Hour: $hrs
 	mins=1
-	for ((d=1; d<60; d++))
+	while [ $mins -lt 60 ]
 	do
 		echo $mins
 		let mins+=1
