@@ -22,4 +22,19 @@ This project is designed to solidify the knowledge of using loops, conditions, p
 This project is designed to help reinforce knowledge of bash processess and signals
 
 ## 0x06. Regular expression
-This project requires regular expressions to be built using Oniguruma, a regular expression library that which is used by Ruby by defaul.
+This project requires regular expressions to be built using Oniguruma, a regular expression library that which is used by Ruby by defaul
+
+## 0x07. Networking basics #0
+This project is designed to reinforce the knowledge of network concepts like 
+* OSI model
+* LAN
+* WAN
+* The internet and internet addresses
+* TCP/UDP
+
+## 0x08. Networking basics #1
+This project is designed to reinforce the knowledge of network concepts like
+* What is localhost/127.0.0.1
+* What is 0.0.0.0
+* What is /etc/hosts
+* How to display your machine’s active network interfaces
