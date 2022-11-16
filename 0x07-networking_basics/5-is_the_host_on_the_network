@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script pings ip adress entred by user 5 times
+
+ping -c 5 $1
