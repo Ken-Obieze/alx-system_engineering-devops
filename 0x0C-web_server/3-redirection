@@ -4,7 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "GSM Arena" | sudo tee /var/www/html/index.nginx-debian.html
+echo "GSM Arena" > sudo /var/www/html/index.nginx-debian.html
 
 # configure redirection
 new_str="\\\trewrite ^/redirect_me https://www.gsmarena.com\
