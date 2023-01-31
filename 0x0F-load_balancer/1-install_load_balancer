@@ -10,7 +10,7 @@ sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bk
 
 sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
 
-sudo sed -i "$ a/listen 77413-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tstats uri /haproxy?stats\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 77413-web-01 107.23.21.154:80 check\n\tserver 77413-web-02 100.25.148.14:80 check\n\t" /etc/haproxy/haproxy.cfg
+sudo sed -i "$ a\listen 77413-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tstats uri /haproxy?stats\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 77413-web-01 107.23.21.154:80 check\n\tserver 77413-web-02 100.25.148.14:80 check\n\t" /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
 ~
