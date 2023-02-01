@@ -1,5 +1,4 @@
 #client config
-include stdlib
 
 file_line { 'password auth':
 	path  => '/etc/ssh/ssh_config',
