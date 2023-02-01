@@ -4,7 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "GSM Arena" > sudo /var/www/html/index.nginx-debian.html
+echo "GSM Arena" > /var/www/html/index.nginx-debian.html
 
 # configure redirection
 new_str="\\\trewrite ^/redirect_me https://www.gsmarena.com\
@@ -12,7 +12,7 @@ wu4 permanent;"
 sudo sed -i "42i $new_str" /etc/nginx/sites-available/default
 
 # create custom error 404 page
-echo "Ceci n'est pas une page" > sudo /var/www/html/error404
+echo "Ceci n'est pas une page" >> /var/www/html/error404
 # configure custom error page to be served
 new_str="\\\terror_page 404 /error404;"
 sudo sed -i "43i $new_str" /etc/nginx/sites-available/default
