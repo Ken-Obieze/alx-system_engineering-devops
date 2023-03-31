@@ -7,4 +7,4 @@ fi
 
 username=$1
 
-sudo -u "$username" whoamii
+sudo -u "$username" whoami
